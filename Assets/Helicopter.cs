@@ -13,7 +13,7 @@ public class Helicopter : MonoBehaviour
     }
 
     private void Update() {
-        topRotor.Rotate(Vector3.up, -10);
-        backRotor.Rotate(Vector3.forward, 10);
+        topRotor.Rotate(Vector3.up, 10, Space.World);
+        backRotor.Rotate(Vector3.forward, 10, Space.World);
     }
 }
