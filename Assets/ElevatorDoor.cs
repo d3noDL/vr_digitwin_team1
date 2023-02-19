@@ -8,6 +8,8 @@ public class ElevatorDoor : MonoBehaviour
     private AudioSource aud;
     private bool isOpen;
 
+    [SerializeField] private AudioLowPassFilter lpf;
+
     private void Start() {
         anim = GetComponent<Animator>();
         aud = GetComponent<AudioSource>();
@@ -18,6 +20,7 @@ public class ElevatorDoor : MonoBehaviour
             anim.SetTrigger("open");
             aud.Play();
             isOpen = true;
+            lpf.enabled = false;
         }
     }
 }
