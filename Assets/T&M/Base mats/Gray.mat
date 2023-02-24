@@ -124,7 +124,7 @@ Material:
     - _DstBlend: 0
     - _EnvironmentReflections: 1
     - _FlatRimEdgeSmoothness: 0
-    - _FlatRimLightAlign: 1
+    - _FlatRimLightAlign: 0
     - _FlatRimSize: 1
     - _FlatSpecularEdgeSmoothness: 0
     - _FlatSpecularSize: 0.1
