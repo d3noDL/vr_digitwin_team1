@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -43,5 +44,13 @@ public class Helicopter : MonoBehaviour
         dir.Stop();
         dir.time = 10;
         
+    }
+
+    private void OnTriggerEnter(Collider other) {
+        if (other.CompareTag("MusicChange")) {
+            aud.Stop();
+            aud.clip = cloudMusic;
+            aud.Play();
+        }
     }
 }
